@@ -1,0 +1,50 @@
+{
+  "name": "@kasimirjs/kit-bootstrap",
+  "version": "1.0.5",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "make.mjs": "tsc -d ",
+    "build": "npm run make.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasimirjs/kasimirjs-kit-bootstrap.git"
+  },
+  "author": "Matthias Leuffen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kasimirjs/kasi-editor/issues"
+  },
+  "homepage": "https://github.com/kasimirjs/kasi-editor#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "reflect-metadata": "*",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.1",
+    "ts-jest": "^29.0",
+    "ts-loader": "^9.4",
+    "ts-node": "^10.9",
+    "typescript": "^4"
+  }
+}

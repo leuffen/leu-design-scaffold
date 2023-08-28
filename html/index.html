@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leuffen Element Scaffold</title>
+    <link type="text/css" rel="stylesheet" href="/assets/style.css">
+    <link type="text/css" rel="stylesheet" href="/assets/bs.css">
+</head>
+<body>
+    <main>
+
+        <section class="tjs__hero-2col">
+            <div class="tjs__wrapper">
+                <div class="tjs__hero-2col__start">
+                    <h1>Leuffen Element Scaffold</h1>
+                    <p>Leuffen Element Scaffold is a simple tool to create a new element for the Leuffen Element Framework.</p>
+                    <p>It is based on the</p>
+                </div>
+                <div class="tjs__hero-2col__end">
+                    <img src="">
+                </div>
+            </div>
+        </section>
+
+        <section class="tjs__hero-2col">
+            <div class="tjs__wrapper">
+                <div class="tjs__hero-2col__start">
+                    <h1>Leuffen Element Scaffold</h1>
+                    <p>Leuffen Element Scaffold is a simple tool to create a new element for the Leuffen Element Framework.</p>
+                    <p>It is based on the</p>
+                </div>
+                <div class="tjs__hero-2col__end">
+                    <img src="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Bei DomDocumentLoaded und Reszise des Viewports prüfen, ob die Klasse mobile gesetzt werden muss. Anonsten Klasse entfernen.
+        const setMobileClass = () => {
+            const isMobile = window.innerWidth < 768;
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section) => {
+                if (isMobile) {
+                    section.classList.add('mobile');
+                } else {
+                    section.classList.remove('mobile');
+                }
+            });
+        };
+        window.addEventListener('DOMContentLoaded', setMobileClass);
+        window.addEventListener('resize', setMobileClass);
+    </script>
+</body>
+</html>
