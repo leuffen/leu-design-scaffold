@@ -1,1 +1,5 @@
+/* Diese Datei wird per Webpack an /dist/style.css veröffentlicht */
+
+// Komponenten nachfolgend importieren:
+@import "variables";
 @import "./header-2col";
