@@ -4,3 +4,21 @@
  */
 
 $primary: #007bff;
+
+$color-grey-muted: #a0a0a0;
+$color-grey-dark: #263238;
+$color-grey-dark-2: #30383c;
+$color-grey-dark-3: #3c4347;
+
+$custom-colors: (
+    grey-muted: $color-grey-muted,
+    grey-dark: $color-grey-dark,
+    grey-dark-2: $color-grey-dark-2,
+    grey-dark-3: $color-grey-dark-3,
+);
+
+:root {
+    @each $color, $value in $custom-colors {
+        --color-#{$color}: #{$value};
+    }
+}
