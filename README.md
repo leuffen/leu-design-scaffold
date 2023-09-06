@@ -28,7 +28,17 @@ ausführen. Die Website aus `html/index.html` ist dann unter http://localhost:40
 
 Bitte BEM (Block Element Modifier) Notation verwenden. Siehe https://en.bem.info/methodology/quick-start/
 
-Den namen von Element mit `tjs-` Prefixen: z.B. `tjs-header1`
+Den Namen von Section-Elementen mit `tjs-` Prefixen: z.B. `tjs-header1`
+
+```html
+<section class="tjs-navbar1">
+    <div class="tjs__logo">
+        <img src="..." alt="...">
+    </div>
+</section>
+```
+
+- Unterelement: `tjs__<element>` werden immer über die übergeordnete Klasse selektiert
 
 
 ## Best Practices
