@@ -3,8 +3,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     entry: {
-        'assets/style': './src/_style.scss',
-        'assets/bs': './src/_bs.scss',
+        'assets/style': './src/style.scss',
+        'assets/bs': './src/bs.scss',
 
     },
     cache: true,

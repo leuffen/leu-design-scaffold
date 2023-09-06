@@ -6,21 +6,15 @@ ports: "80:80;4000:4000;4100:4100"
 
 command:
   build:
-    - "jekyll build -s /opt/docs -d /var/www/html"
+    - "npm update"
 
   run:
 
-  jekyll: |
-    jekyll serve -s /opt/docs -d /var/www/html --drafts --livereload --port 4000 --livereload-port 4100 --host 0.0.0.0
-
   dev:
-    - "killall webpack || echo 'No Proc'"
-    - "D:kick jekyll"
+    - "killall webpack-dev-server || echo not running"
+    - "D:webpack-dev-server"
 
-  init-workspaces:
-    - "mkdir -p workspaces"
-    - "git -C ./workspaces/ clone  git@github.com:dermatthes/leu-web-components.git"
-    - "npm install"
+
 
   update:
     - "npm update"
