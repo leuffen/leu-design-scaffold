@@ -1,5 +1,6 @@
 ﻿const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
     entry: {
@@ -63,8 +64,11 @@ module.exports = {
           filename: "[name].css",
           chunkFilename: "[id].css",
         }),
-
-
+        new CopyPlugin({
+            patterns: [
+                { from: "static", to: "static" }
+            ],
+        }),
     ],
 
 
