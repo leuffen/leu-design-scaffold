@@ -23,12 +23,12 @@ main {
     letter-spacing: 0px;
     background: transparent linear-gradient(118deg, #E8F6FF 0%, #ECF2DC 100%) 0% 0% no-repeat padding-box;
     blockquote {
-        font-size: 3em;
+        font-size: calc(1.5em + 1vw);
         font-weight: bold;
         color: $text-color;
     }
     &.mobile {
-
+        text-align: center;
     }
     .btn-primary {
         background-color: #41C7A8;
@@ -43,7 +43,7 @@ main {
     }
 }
 .banner {
-    height: 45px;
+    padding: 0.3rem;
     background-color: $bg-dark;
     text-align: center;
     color: #ffffff;
@@ -57,10 +57,14 @@ main {
 .fiver {
     font-size: 18px;
     margin-bottom: 50px;
-    .title {
-        h2 {
-            font-size: 25px;
-            margin-bottom: 40px;
+
+    blockquote {
+        font-size: 25px;
+        margin-bottom: 40px;
+        text-align: center;
+        span {
+            display: block;
+            font-weight: 500;
         }
     }
     .icon {
@@ -79,10 +83,32 @@ main {
             object-fit: contain;
         }
     }
+    &.mobile {
+        .col {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .icon {
+            margin-bottom: 0;
+        }
+        .text {
+            width: inherit;
+            text-align: left;
+            padding-left: 2em;
+            align-self: center;
+        }
+    }
 }
 
 .image-text {
     margin-bottom: 50px;
+    &.mobile {
+        margin-bottom: 0;
+        .row > div {
+            margin-bottom: 50px;
+        }
+        
+    }
 }
 
 .dark-box {
