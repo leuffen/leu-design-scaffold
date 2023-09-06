@@ -24,6 +24,13 @@ ausführen. Die Website aus `html/index.html` ist dann unter http://localhost:40
 - `src/` - Hier liegen die Quelldateien (SCSS) für die Website
 
 
+## Elementnamen
+
+Bitte BEM (Block Element Modifier) Notation verwenden. Siehe https://en.bem.info/methodology/quick-start/
+
+Den namen von Element mit `tjs-` Prefixen: z.B. `tjs-header1`
+
+
 ## Best Practices
 
 ### Hintergrundbilder
