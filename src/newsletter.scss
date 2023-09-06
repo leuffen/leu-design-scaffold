@@ -8,6 +8,7 @@
 
     font-family: 'Roboto Flex', sans-serif;
     padding: 2rem 0;
+    color: var(--bs-white);
 
     .row {
         background-color: var(--color-grey-dark-4);
@@ -18,7 +19,7 @@
 
     .tjs__newsletter__icon {
         position: absolute;
-        filter: opacity(0.3);
+        filter: brightness(0.8);
         width: 55px;
 
         &:nth-of-type(1) {
@@ -38,12 +39,15 @@
         letter-spacing: 1.8px;
         display: inline-flex;
         margin-bottom: 1rem;
+        color: var(--color-green);
     }
 
     .input-group-text {
         border: none;
         padding: $input-padding-y $input-padding-x;
         font-variation-settings: "wght" 500;
+        background-color: var(--color-green);
+        color: var(--bs-white);
 
         &.outside {
             display: none;
@@ -89,15 +93,9 @@
 
     &.dark {
         background-color: var(--color-grey-dark);
-        color: var(--bs-white);
 
-        strong {
-            color: var(--color-green);
-        }
-
-        .input-group-text {
-            background-color: var(--color-green);
-            color: var(--bs-white);
+        .tjs__newsletter__icon {
+            filter: opacity(0.3);
         }
     }
 }
